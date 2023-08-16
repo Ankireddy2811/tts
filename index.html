@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Speech Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=LnwCdrnL"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d1c2ea8b80.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-container">
+    <img src="https://img.freepik.com/premium-vector/robot-self-learning-flat-illustration-editable-vector-design_203633-3489.jpg?size=626&ext=jpg&uid=R96020447&ga=GA1.2.28550720.1691598180&semt=ais" class="img-ele" alt="textToSpeech"/>
+    <div class="sub-container">
+        <h1 class="heading">Text-to-Speech Demo</h1>
+        <textarea id="inputText" placeholder="Enter text here" class="textareaEle"></textarea>
+        <div class="options">
+            <label for="language" class="label1">Select Language:</label>
+            <select id="languageElement">
+                <option value="US English Female">English (US)</option>
+                <option value="Spanish Latin American Female">Spanish (Spain)</option>
+                <option value="French Female">French</option>
+                <option value="Italian Female">Italian</option>
+                <option value="Korean Female">Korean</option>
+                <option value="Russian Female">Russian</option>
+                <option value="Russian Female">Russian</option>
+                <option value="Hindi Female">Hindi</option>
+                <option value="Chinese Female">Chinese (Simplified)</option>
+                <option value="Chinese Hong Kong Male">Chinese (Hong Kong)</option>
+                <option value="Arabic Male">Arabic</option>   
+                <option value="UK English Female">English (UK)</option>
+                <option value="Australian Female">English (Australia)</option>
+                
+                
+            </select>
+            <label for="pitchElement">Select Pitch:</label>
+            <input type="range" id="pitchElement" min="0" max="2" step="0.1" value="1" >
+            <label for="rateElement">Select Rate:</label>
+            <input type="range" id="rateElement" min="0.5" max="2" step="0.1" value="1">
+        </div>
+        <button id="synthesizeBtn">Synthesize</button>
+        <button id="playAudioBtn" disabled>Play Audio</button>
+        <hr class="hr-line" />
+        <div class="text-center copy-container">
+            <i class="fa fa-copyright icon" aria-hidden="true"></i>
+            <span class="vr-footer-section-copyright">2023 by Anki. Created with HTML,CSS,JS,API'S.</span>
+        </div>
+    
+    </div>
+</div>
+</body>
+</html>
